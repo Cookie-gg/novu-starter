@@ -1,0 +1,25 @@
+._ {
+  background: rgba(var(--card-rgb), 0.1);
+  border: 1px solid rgba(var(--card-border-rgb), 0.15);
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--border-radius);
+  transition: border-color 0.2s;
+  cursor: pointer;
+  font-size: 0.9rem;
+  position: relative;
+}
+
+._ svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+._:has(svg) span {
+  opacity: 0;
+}
+
+._:hover {
+  border: 1px solid rgba(var(--card-border-rgb));
+}
